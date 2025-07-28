@@ -1,12 +1,12 @@
-/* --- 1. IMPORTAÇÃO DAS FONTES (Playfair Display + Lato) --- */
-/* Esta linha agora importa as duas fontes que vamos usar: Playfair Display para títulos e Lato para textos. */
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@700&display=swap');
+/* --- 1. IMPORTAÇÃO DA FONTE (Apenas Playfair Display) --- */
+/* Esta linha agora importa apenas a fonte Playfair Display em diferentes pesos. */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 /* --- TEMA ESCURO: ESTILOS GERAIS E ESTRUTURA --- */
 
 body {
-    /* [ALTERAÇÃO] A fonte principal para textos agora é a 'Lato', que é limpa e legível. */
-    font-family: 'Lato', sans-serif;
+    /* [ALTERAÇÃO] A fonte principal para TODO o site agora é a 'Playfair Display'. */
+    font-family: 'Playfair Display', serif;
     line-height: 1.6;
     color: #e2e8f0; 
     margin: 0;
@@ -41,7 +41,7 @@ header {
     padding-top: 30px; 
 }
 
-/* [ALTERAÇÃO] A fonte dos títulos agora é a 'Playfair Display', para um visual mais luxuoso. */
+/* Esta regra continua válida, garantindo que os títulos usem a fonte correta. */
 h1, h2, h3, h4 {
     font-family: 'Playfair Display', serif;
     color: #CCCD65; 
@@ -81,8 +81,8 @@ select {
     box-sizing: border-box;
     color: #e2e8f0;
     text-align: center;
-    /* [ALTERAÇÃO] Os campos do formulário usam a fonte 'Lato' para consistência. */
-    font-family: 'Lato', sans-serif;
+    /* [ALTERAÇÃO] Os campos do formulário agora também usam a 'Playfair Display'. */
+    font-family: 'Playfair Display', serif;
 }
 
 select option {
@@ -111,6 +111,8 @@ button[type="submit"] {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    /* Adicionando a fonte ao botão também para total consistência */
+    font-family: 'Playfair Display', serif;
 }
 
 button[type="submit"]:hover {
@@ -124,13 +126,13 @@ button[type="submit"]:hover {
 /* --- ESTILO DO RODAPÉ --- */
 
 footer {
-    text-align: center; /* Centraliza o texto do rodapé */
-    margin-top: 40px;   /* Adiciona um espaço acima do rodapé */
+    text-align: center;
+    margin-top: 40px;
     padding: 20px;
 }
 
 footer p {
-    font-size: 0.9em;   /* Deixa a fonte um pouco menor */
-    color: #a0aec0;      /* Usa a cor cinza suave para o texto */
-    margin: 5px 0;      /* Espaçamento pequeno entre as linhas do rodapé */
+    font-size: 0.9em;
+    color: #a0aec0;
+    margin: 5px 0;
 }
