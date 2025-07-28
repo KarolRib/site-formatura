@@ -1,0 +1,122 @@
+/* --- 1. IMPORTAÇÃO DAS FONTES (Playfair Display + Lato) --- */
+/* Esta linha agora importa as duas fontes que vamos usar: Playfair Display para títulos e Lato para textos. */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@700&display=swap');
+
+/* --- TEMA ESCURO: ESTILOS GERAIS E ESTRUTURA --- */
+
+body {
+    /* [ALTERAÇÃO] A fonte principal para textos agora é a 'Lato', que é limpa e legível. */
+    font-family: 'Lato', sans-serif;
+    line-height: 1.6;
+    color: #e2e8f0; 
+    margin: 0;
+    padding: 20px;
+
+    /* FUNDO COM IMAGEM E FILTRO ESCURO */
+    background-image: 
+        linear-gradient(rgba(26, 32, 44, 0.85), rgba(26, 32, 44, 0.85)),
+        url('images/foto-giovanna.jpg');
+    
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+/* Estilo dos "cartões" de conteúdo */
+main, header {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: rgba(57, 62, 69, 0.189); 
+    border-radius: 8px;
+    border: 1px solid #4a5568;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+
+/* --- TEXTOS E TÍTULOS --- */
+
+header {
+    padding-top: 30px; 
+}
+
+/* [ALTERAÇÃO] A fonte dos títulos agora é a 'Playfair Display', para um visual mais luxuoso. */
+h1, h2, h3, h4 {
+    font-family: 'Playfair Display', serif;
+    color: #CCCD65; 
+}
+h1{
+    font-size: 2.8em;
+    font-weight: normal;
+    color: #CCCD65; 
+
+}
+
+h2 {
+    font-size: 1.2em;
+    font-weight: normal;
+    color: #a0aec0;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #4a5568;
+    margin: 30px 0;
+}
+
+
+/* --- FORMULÁRIO (ESTILO DARK) --- */
+
+input[type="text"],
+input[type="tel"],
+select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    background-color: #1a202c;
+    border: 1px solid #4a5568;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: #e2e8f0;
+    text-align: center;
+    /* [ALTERAÇÃO] Os campos do formulário usam a fonte 'Lato' para consistência. */
+    font-family: 'Lato', sans-serif;
+}
+
+select option {
+    background: #ced36d20; 
+}
+
+label, p {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #a0aec0;
+}
+
+p {
+    font-weight: normal;
+    color: #e2e8f0;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    background-color: #CED36D; 
+    color: #1a202c;
+    font-size: 1.2em;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #71734B; 
+}
+
+#info-eventos {
+    text-align: center;
+}
