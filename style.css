@@ -120,3 +120,17 @@ button[type="submit"]:hover {
 #info-eventos {
     text-align: center;
 }
+
+/* --- ESTILO DO RODAPÉ --- */
+
+footer {
+    text-align: center; /* Centraliza o texto do rodapé */
+    margin-top: 40px;   /* Adiciona um espaço acima do rodapé */
+    padding: 20px;
+}
+
+footer p {
+    font-size: 0.9em;   /* Deixa a fonte um pouco menor */
+    color: #a0aec0;      /* Usa a cor cinza suave para o texto */
+    margin: 5px 0;      /* Espaçamento pequeno entre as linhas do rodapé */
+}

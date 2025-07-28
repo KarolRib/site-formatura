@@ -104,9 +104,129 @@
                     <p style="font-size: 0.9em; color: #a0aec0;">Entrarei em contato com você pelo
                         telefone informado para combinarmos o pagamento via PIX ou em dinheiro.</p>
                 </div>
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatura de Giovanna</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Confirmação de Presença</h1>
+        <h2> 🎓Formatura Giovanna de Oliveira Vicente🎓</h2>
+    </header>
+
+    <header>
+        <h3>Minha mensagem especial para você</h3>
+        <p>Olá, meu querido(a) convidado(a)! Estou muito feliz em compartilhar este momento especial da minha vida com
+            você. Sua presença é muito importante para mim. Por favor, confirme sua presença nos eventos e, se possível,
+            adquira o convite para o baile de gala. Será uma noite inesquecível! Conto com sua presença!</p>
+        <p>Com carinho, Giovanna ❤️</p>
+    </header>
+
+    <main>
+        <section id="info-eventos">
+            <h3>Nossos Eventos</h3>
+            <p><strong>Solenidade de Colação de Grau:</strong> 12/03/2026 às 20:00 no Palacio de Cristal.</p>
+            <p><strong>Missa de celebração:</strong> 13/03/2026 às 19:00 na Igreja Nossa Senhora Aparecida.</p>
+            <p><strong>Baile de Gala:</strong> 14/03/2026 às 22:00 no Palacio de Cristal.</p>
+            <hr>
+        </section>
+
+        <section id="formulario-confirmacao">
+            <h3>Por favor, confirme seus dados e presença:</h3>
+
+            <form action="https://formspree.io/f/xblkowgz" method="POST">
+
+                <label for="nome">Nome Completo:</label><br>
+                <input type="text" id="nome" name="nome" required><br><br>
+
+                <label for="telefone">Telefone (com DDD):</label><br>
+                <input type="tel" id="telefone" name="telefone" required><br><br>
+
+                <p><strong>Confirmo minha presença nos seguintes eventos (gratuitos):</strong></p>
+                <input type="checkbox" id="presenca_missa" name="presenca_missa" value="Sim">
+                <label for="presenca_missa">Missa de Celebração</label><br>
+
+                <input type="checkbox" id="presenca_colacao" name="presenca_colacao" value="Sim">
+                <label for="presenca_colacao">Colação de Grau</label><br><br>
+                <hr>
+
+                <h3>Convite para o Baile de Gala</h3>
+                <p><strong>Convite individual para o Baile de Gala tem o valor de R$ 500,00.</strong></p>
+                <p><strong>A data limite para a compra e confirmação do convite é 30/09/2025.</strong></p>
+
+
+                <label for="interesse_baile">Tenho interesse em adquirir o convite para o baile:</label>
+                <p></p>
+                <select id="interesse_baile" name="interesse_baile">
+                    <option value="Nao">Não, obrigado(a).</option>
+                    <option value="Sim">Sim, desejo adquirir!</option>
+                </select>
+                <br><br>
+
+                <div id="area-de-pagamento" style="display:none;">
+                    <label for="forma_pagamento">Qual será a forma de pagamento?</label>
+                    <select id="forma_pagamento" name="forma_pagamento">
+                        <option value="Nao Selecionado">-- Selecione --</option>
+                        <option value="Cartao de Credito">Cartão de Crédito</option>
+                        <option value="Pix ou Dinheiro">PIX ou Dinheiro</option>
+                    </select>
+                    <br><br>
+                </div>
+
+                <div id="area-calculadora" style="display:none;">
+                    <label for="parcelas">Simular parcelamento no cartão de crédito em até 12x:</label><br>
+                    <p style="font-size: 0.8em; color: #a0aec0; margin-top: -10px;"><em>(Simulação válida para bandeiras
+                            Visa e Mastercard)</em></p>
+                    <select id="parcelas" name="parcelas">
+                        <option value="1">1x (à vista)</option>
+                        <option value="2">2x</option>
+                        <option value="3">3x</option>
+                        <option value="4">4x</option>
+                        <option value="5">5x</option>
+                        <option value="6">6x</option>
+                        <option value="7">7x</option>
+                        <option value="8">8x</option>
+                        <option value="9">9x</option>
+                        <option value="10">10x</option>
+                        <option value="11">11x</option>
+                        <option value="12">12x</option>
+                    </select>
+                    <p><strong>Valor da parcela: <span id="resultado-parcela">R$ 0,00</span></strong></p>
+                    <p id="aviso-pagamento" style="font-size: 0.9em; color: #a0aec0;"> 
+                        <h3>Lembrando que essa é apenas uma simulação</h3>
+                        <p>Para pagamento com cartão de crédito, encontrarei com você pessoalmente para passar o cartão. Caso seu cartão não possua tecnologia de aproximação, outros valores serão aplicados.</p>
+                </div>
+
+                <div id="info-pix-dinheiro" style="display:none;">
+                    <p style="font-size: 0.9em; color: #a0aec0;">Entrarei em contato com você pelo
+                        telefone informado para combinarmos o pagamento via PIX ou em dinheiro.</p>
+                </div>
 
                 <br>
                 <button type="submit">Enviar Confirmação</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Giovanna de Oliveira Vicente.</p>
+        <p>Todos os direitos reservados.</p>       
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+                <br>
             </form>
         </section>
     </main>
