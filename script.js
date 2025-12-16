@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
         7: 8.99, 8: 9.69, 9: 10.38, 10: 11.06, 11: 11.74, 12: 12.40
     };
     // Valor base do convite que você quer receber.
-    const valorLiquidoDesejado = 500;
+    const valorLiquidoDesejado = 600;
 
     // --- 3. FUNÇÕES (OS "CÉREBROS" DA PÁGINA) ---
 

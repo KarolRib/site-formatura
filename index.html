@@ -1,163 +1,218 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Formatura de Giovanna</title>
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-</head>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
 
-<body>
-
+  <body>
     <header class="hero">
-        <div class="hero-content">
-            <h1>🎓Formatura Giovanna</h1>
-        </div>
+      <div class="hero-content">
+        <h1>🎓Formatura Giovanna</h1>
+      </div>
     </header>
 
     <div class="container">
-        <main>
-            <section class="mensagem-pessoal">
-                <h3>Minha mensagem especial para você</h3>
-                <p>Estou muito feliz em compartilhar este momento especial da minha vida com você. Sua presença é muito importante para mim. Por favor, confirme sua presença nos eventos e, se possível, adquira o convite para o baile de gala. Será uma noite inesquecível! Conto com sua presença!</p>
-                <p>Com carinho, Giovanna ❤️</p>
-            </section>
-            
-            <hr> <section id="info-eventos">
-                <h3>Nossos Eventos</h3>
-                <div class="eventos-container">
-                    <div class="evento-card">
-                        <i class="fa-solid fa-church"></i>
-                        <h4>Colação de Grau</h4>
-                        <p><strong>Data:</strong> 12/03/2026</p>
-                        <p><strong>Horário:</strong> 20:00</p>
-                        <p><strong>Local:</strong> Palacio de Cristal</p>
-                    </div>
-                    <div class="evento-card">
-                        <i class="fa-solid fa-graduation-cap"></i>
-                        <h4>Missa de Celebração</h4>
-                        <p><strong>Data:</strong> 13/03/2026</p>
-                        <p><strong>Horário:</strong> 19:00</p>
-                        <p><strong>Local:</strong> Igreja Nossa Senhora Aparecida</p>
-                    </div>
-                    <div class="evento-card">
-                        <i class="fa-solid fa-champagne-glasses"></i>
-                        <h4>Baile de Gala</h4>
-                        <p><strong>Data:</strong> 14/03/2026</p>
-                        <p><strong>Horário:</strong> 22:00</p>
-                        <p><strong>Local:</strong> Palacio de Cristal</p>
-                    </div>
+      <main>
+        <section class="mensagem-pessoal">
+          <h3>Minha mensagem especial para você</h3>
+          <p>
+            Estou muito feliz em compartilhar este momento especial da minha
+            vida com você. Sua presença é muito importante para mim. Por favor,
+            confirme sua presença nos eventos e, se possível, adquira o convite
+            para o baile de gala. Será uma noite inesquecível! Conto com sua
+            presença!
+          </p>
+          <p>Com carinho, Giovanna ❤️</p>
+        </section>
+
+        <hr />
+        <section id="info-eventos">
+          <h3>Nossos Eventos</h3>
+          <div class="eventos-container">
+            <div class="evento-card">
+              <i class="fa-solid fa-church"></i>
+              <h4>Colação de Grau</h4>
+              <p><strong>Data:</strong> 12/03/2026</p>
+              <p><strong>Horário:</strong> 20:00</p>
+              <p><strong>Local:</strong> Palacio de Cristal</p>
+            </div>
+            <div class="evento-card">
+              <i class="fa-solid fa-graduation-cap"></i>
+              <h4>Missa de Celebração</h4>
+              <p><strong>Data:</strong> 13/03/2026</p>
+              <p><strong>Horário:</strong> 20:00</p>
+              <p><strong>Local:</strong> Igreja Nossa Senhora Aparecida</p>
+            </div>
+            <div class="evento-card">
+              <i class="fa-solid fa-champagne-glasses"></i>
+              <h4>Baile de Gala</h4>
+              <p><strong>Data:</strong> 14/03/2026</p>
+              <p><strong>Horário:</strong> 22:00</p>
+              <p><strong>Local:</strong> Palacio de Cristal</p>
+            </div>
+          </div>
+        </section>
+
+        <hr />
+        <section id="formulario-confirmacao">
+          <h3>Por favor, confirme seus dados e presença:</h3>
+
+          <form action="https://formspree.io/f/xblkowgz" method="POST">
+            <div class="form-group">
+              <label for="nome">Nome Completo:</label>
+              <p></p>
+              <input type="text" id="nome" name="nome" required />
+            </div>
+
+            <div class="form-group">
+              <label for="telefone">Telefone (com DDD):</label>
+              <p></p>
+              <input type="tel" id="telefone" name="telefone" required />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Deixe uma mensagem para a Giovanna:</label>
+              <p></p>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+
+            <div class="form-group">
+              <p class="form-subtitle">
+                <strong>Confirmo minha presença nos seguintes eventos:</strong>
+              </p>
+              <div class="checkbox-container">
+                <div class="checkbox-group">
+                  <input
+                    type="checkbox"
+                    id="presenca_missa"
+                    name="presenca_missa"
+                    value="Sim"
+                  />
+                  <label for="presenca_missa"
+                    >Missa de Celebração (gratuito)</label
+                  >
                 </div>
-            </section>
-            
-            <hr> <section id="formulario-confirmacao">
-                <h3>Por favor, confirme seus dados e presença:</h3>
+                <div class="checkbox-group">
+                  <input
+                    type="checkbox"
+                    id="presenca_colacao"
+                    name="presenca_colacao"
+                    value="Sim"
+                  />
+                  <label for="presenca_colacao"
+                    >Colação de Grau (gratuito)</label
+                  >
+                </div>
+                <div class="checkbox-group">
+                  <input
+                    type="checkbox"
+                    id="presenca_baile"
+                    name="presenca_baile"
+                    value="Sim"
+                  />
+                  <label for="presenca_baile">Baile de Gala</label>
+                </div>
+              </div>
+            </div>
 
-                <form action="https://formspree.io/f/xblkowgz" method="POST">
-                    
-                    <div class="form-group">
-                        <label for="nome">Nome Completo:</label>
-                        <p></p> <input type="text" id="nome" name="nome" required>
-                    </div>
+            <hr />
+            <h3>Convite para o Baile de Gala</h3>
+            <p>
+              O convite individual para o Baile de Gala tem o valor de R$
+              600,00, e poderá ser parcelado em até 12x no cartão de crédito.
+              Acesse a calculadora de taxas abaixo para simulação de
+              parcelamento.
+            </p>
 
-                    <div class="form-group">
-                        <label for="telefone">Telefone (com DDD):</label>
-                        <p></p> <input type="tel" id="telefone" name="telefone" required>
-                    </div>
+            <div class="form-group">
+              <label for="interesse_baile">Tenho interesse em adquirir:</label>
+              <p></p>
+              <select id="interesse_baile" name="interesse_baile">
+                <option value="Nao">Não, obrigado(a).</option>
+                <option value="Sim">Sim, desejo adquirir!</option>
+              </select>
+            </div>
 
-                    <div class="form-group">
-                        <label for="message">Deixe uma mensagem para a Giovanna:</label>
-                        <p></p>
-                        <textarea id="message" name="message" required></textarea>
-                    </div>
+            <div id="area-de-pagamento" style="display: none">
+              <div class="form-group">
+                <label for="forma_pagamento"
+                  >Qual será a forma de pagamento (à vista ou parcelado em até
+                  12x)?</label
+                >
+                <select id="forma_pagamento" name="forma_pagamento">
+                  <option value="Nao Selecionado">-- Selecione --</option>
+                  <option value="Cartao de Credito">Cartão de Crédito</option>
+                  <option value="Pix ou Dinheiro">PIX ou Dinheiro</option>
+                </select>
+              </div>
+            </div>
 
-                    <div class="form-group">
-                        <p class="form-subtitle"><strong>Confirmo minha presença nos seguintes eventos:</strong></p>
-                        <div class="checkbox-container">
-                            <div class="checkbox-group">
-                                <input type="checkbox" id="presenca_missa" name="presenca_missa" value="Sim">
-                                <label for="presenca_missa">Missa de Celebração (gratuito)</label>
-                            </div>
-                            <div class="checkbox-group">
-                                <input type="checkbox" id="presenca_colacao" name="presenca_colacao" value="Sim">
-                                <label for="presenca_colacao">Colação de Grau (gratuito)</label>
-                            </div>
-                            <div class="checkbox-group">
-                                <input type="checkbox" id="presenca_baile" name="presenca_baile" value="Sim">
-                                <label for="presenca_baile">Baile de Gala</label>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <hr> <h3>Convite para o Baile de Gala</h3>
-                    <p> O convite individual para o Baile de Gala tem o valor de R$ 500,00, e poderá ser parcelado em até 12x no cartão de crédito. Acesse a calculadora de taxas abaixo para simulação de parcelamento.</p>
+            <div id="area-calculadora" style="display: none">
+              <div class="form-group">
+                <label for="parcelas"
+                  >Simular parcelamento no cartão de crédito em até 12x:</label
+                >
+                <p class="form-note">
+                  <i class="fa-solid fa-circle-info"></i> (Simulação válida para
+                  bandeiras Visa e Mastercard)
+                </p>
+                <select id="parcelas" name="parcelas">
+                  <option value="1">1x (à vista)</option>
+                  <option value="2">2x</option>
+                  <option value="3">3x</option>
+                  <option value="4">4x</option>
+                  <option value="5">5x</option>
+                  <option value="6">6x</option>
+                  <option value="7">7x</option>
+                  <option value="8">8x</option>
+                  <option value="9">9x</option>
+                  <option value="10">10x</option>
+                  <option value="11">11x</option>
+                  <option value="12">12x</option>
+                </select>
+              </div>
+              <p>
+                <strong
+                  >Valor de parcelas:
+                  <span id="resultado-parcela">R$ 0,00</span></strong
+                >
+              </p>
+              <div id="aviso-pagamento">
+                <h3>Lembrando que essa é apenas uma simulação</h3>
+                <p>
+                  Para pagamento com cartão de crédito, encontrarei com você
+                  pessoalmente. Caso seu cartão não possua tecnologia de
+                  aproximação, outros valores serão aplicados.
+                </p>
+              </div>
+            </div>
 
-                    <div class="form-group">
-                        <label for="interesse_baile">Tenho interesse em adquirir:</label>
-                        <p></p> <select id="interesse_baile" name="interesse_baile">
-                            <option value="Nao">Não, obrigado(a).</option>
-                            <option value="Sim">Sim, desejo adquirir!</option>
-                        </select>
-                    </div>
+            <div id="info-pix-dinheiro" style="display: none">
+              <p>
+                Entrarei em contato com você pelo telefone informado para
+                combinarmos o pagamento via PIX ou em dinheiro.
+              </p>
+            </div>
 
-                    <div id="area-de-pagamento" style="display:none;">
-                        <div class="form-group">
-                            <label for="forma_pagamento">Qual será a forma de pagamento (à vista ou parcelado em até 12x)?</label>
-                            <select id="forma_pagamento" name="forma_pagamento">
-                                <option value="Nao Selecionado">-- Selecione --</option>
-                                <option value="Cartao de Credito">Cartão de Crédito</option>
-                                <option value="Pix ou Dinheiro">PIX ou Dinheiro</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <div id="area-calculadora" style="display:none;">
-                        <div class="form-group">
-                            <label for="parcelas">Simular parcelamento no cartão de crédito em até 12x:</label>
-                            <p class="form-note">
-    <i class="fa-solid fa-circle-info"></i> (Simulação válida para bandeiras Visa e Mastercard)
-</p>
-                            <select id="parcelas" name="parcelas">
-                                <option value="1">1x (à vista)</option>
-                                <option value="2">2x</option>
-                                <option value="3">3x</option>
-                                <option value="4">4x</option>
-                                <option value="5">5x</option>
-                                <option value="6">6x</option>
-                                <option value="7">7x</option>
-                                <option value="8">8x</option>
-                                <option value="9">9x</option>
-                                <option value="10">10x</option>
-                                <option value="11">11x</option>
-                                <option value="12">12x</option>
-                            </select>
-                        </div>
-                        <p><strong>Valor de parcelas: <span id="resultado-parcela">R$ 0,00</span></strong></p>
-                        <div id="aviso-pagamento">
-                            <h3>Lembrando que essa é apenas uma simulação</h3>
-                            <p>Para pagamento com cartão de crédito, encontrarei com você pessoalmente. Caso seu cartão não possua tecnologia de aproximação, outros valores serão aplicados.</p>
-                        </div>
-                    </div>
-
-                    <div id="info-pix-dinheiro" style="display:none;">
-                        <p>Entrarei em contato com você pelo telefone informado para combinarmos o pagamento via PIX ou em dinheiro.</p>
-                    </div>
-
-                    <button type="submit">Enviar Confirmação</button>
-                </form>
-            </section>
-        </main>
+            <button type="submit">Enviar Confirmação</button>
+          </form>
+        </section>
+      </main>
     </div>
 
     <footer>
-        <p>&copy; 2025 Giovanna de Oliveira Vicente</p>
-        <p>Todos os direitos reservados</p>
+      <p>&copy; 2025 Giovanna de Oliveira Vicente</p>
+      <p>Todos os direitos reservados</p>
     </footer>
 
     <script src="script.js"></script>
-
-</body>
+  </body>
 </html>

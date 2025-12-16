@@ -11,7 +11,7 @@
     --cor-borda: #4a5568;
 }
 
-/* --- TEMA ESCURO: ESTILOS GERAIS --- */
+/* --- TEMA ESCURO: ESTILOS --- */
 body {
     font-family: 'Playfair Display', serif;
     line-height: 1.0;
@@ -31,7 +31,7 @@ body {
     align-items: center;
     text-align: light;
 
-    /* Configurações essenciais para a técnica funcionar */
+    /* Configurações essenciais */
     position: relative;
     z-index: 1;
     overflow: hidden;
@@ -40,7 +40,7 @@ body {
 /* Camada virtual que segura a imagem de fundo */
 .hero::before {
     content: '';
-    /* A CHAVE PARA O EFEITO FIXO E ESTÁVEL */
+    /* EFEITO FIXO E ESTÁVEL */
     position: fixed; 
     left: 0;
     top: 0;
@@ -98,7 +98,7 @@ main {
     padding-top: 1px;
 }
 
-/* --- ALTERAÇÃO 2: LAYOUT DOS CARDS TORNA-SE RESPONSIVO COM CSS GRID --- */
+/* --- LAYOUT DOS CARDS TORNA-SE RESPONSIVO COM CSS GRID --- */
 .eventos-container {
     display: grid; /* Usando Grid para mais flexibilidade */
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* Responsividade */
@@ -289,7 +289,7 @@ label[for="interesse_baile"] {
 }
 
 /* ==========================================================================
-   5.3. MELHORIAS VISUAIS NA SEÇÃO DE PAGAMENTO (VERSÃO CORRIGIDA)
+   5.3. MELHORIAS VISUAIS NA SEÇÃO DE PAGAMENTO
    ========================================================================== */
 
 /* --- 1. Layout em colunas para a área da calculadora --- */
